@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         if(fragment == null){
-            fragment = MapFragment.newInstance();
+            fragment = TestFragment.newInstance();
             manager.beginTransaction()
                     .add(R.id.fragmentContainer, fragment)
                     .commit();
